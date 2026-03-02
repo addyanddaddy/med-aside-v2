@@ -259,40 +259,43 @@
                     <p>Complete the form below to begin the referral process. All fields marked with * are required.
                         Your information is kept strictly confidential.</p>
 
-                    <form>
+                    <form id="referralForm" novalidate>
+                        <input type="hidden" name="access_key" value="e6a536ec-9d89-431e-9c7f-07c37722ff7e">
+                        <input type="hidden" name="subject" value="New Case Referral — MED-ASIDE">
+                        <div style="position:absolute;left:-9999px;opacity:0;height:0;width:0;overflow:hidden;" aria-hidden="true"><input type="text" name="botcheck" tabindex="-1" autocomplete="off"></div>
+
                         <div class="form-section-title">Referring Party Information</div>
                         <div class="form-row">
                             <div class="form-group">
                                 <label>Your Name *</label>
-                                <input type="text" class="form-control" placeholder="Full Name" required>
+                                <input type="text" name="referrer_name" class="form-control" placeholder="Full Name" required>
                             </div>
                             <div class="form-group">
                                 <label>Firm / Company *</label>
-                                <input type="text" class="form-control" placeholder="Law Firm or Organization"
-                                    required>
+                                <input type="text" name="firm_company" class="form-control" placeholder="Law Firm or Organization" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
                                 <label>Email *</label>
-                                <input type="email" class="form-control" placeholder="you@firm.com" required>
+                                <input type="email" name="email" class="form-control" placeholder="you@firm.com" required>
                             </div>
                             <div class="form-group">
                                 <label>Phone *</label>
-                                <input type="tel" class="form-control" placeholder="(555) 123-4567" required>
+                                <input type="tel" name="phone" class="form-control" placeholder="(555) 123-4567" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label>Your Role *</label>
-                            <select class="form-control" required>
+                            <select name="role" class="form-control" required>
                                 <option value="">Select Role</option>
-                                <option>Plaintiff Attorney</option>
-                                <option>Defense Attorney</option>
-                                <option>Claims Adjuster</option>
-                                <option>Nurse Case Manager</option>
-                                <option>Mediator</option>
-                                <option>Insurance Professional</option>
-                                <option>Other</option>
+                                <option value="Plaintiff Attorney">Plaintiff Attorney</option>
+                                <option value="Defense Attorney">Defense Attorney</option>
+                                <option value="Claims Adjuster">Claims Adjuster</option>
+                                <option value="Nurse Case Manager">Nurse Case Manager</option>
+                                <option value="Mediator">Mediator</option>
+                                <option value="Insurance Professional">Insurance Professional</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
 
@@ -300,68 +303,68 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label>Claimant Name *</label>
-                                <input type="text" class="form-control" placeholder="Full Legal Name" required>
+                                <input type="text" name="claimant_name" class="form-control" placeholder="Full Legal Name" required>
                             </div>
                             <div class="form-group">
                                 <label>Date of Birth</label>
-                                <input type="date" class="form-control">
+                                <input type="date" name="date_of_birth" class="form-control">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
                                 <label>Date of Incident</label>
-                                <input type="date" class="form-control">
+                                <input type="date" name="date_of_incident" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label>State of Jurisdiction *</label>
-                                <select class="form-control" required>
+                                <select name="state" class="form-control" required>
                                     <option value="">Select State</option>
-                                    <option>California</option>
-                                    <option>Texas</option>
-                                    <option>Florida</option>
-                                    <option>New York</option>
-                                    <option>Other (specify in notes)</option>
+                                    <option value="California">California</option>
+                                    <option value="Texas">Texas</option>
+                                    <option value="Florida">Florida</option>
+                                    <option value="New York">New York</option>
+                                    <option value="Other">Other (specify in notes)</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <label>Case Type *</label>
-                            <select class="form-control" required>
+                            <select name="case_type" class="form-control" required>
                                 <option value="">Select Case Type</option>
-                                <option>Workers' Compensation</option>
-                                <option>Liability / Personal Injury</option>
-                                <option>Auto Accident</option>
-                                <option>Medical Malpractice</option>
-                                <option>Other</option>
+                                <option value="Workers Compensation">Workers' Compensation</option>
+                                <option value="Liability Personal Injury">Liability / Personal Injury</option>
+                                <option value="Auto Accident">Auto Accident</option>
+                                <option value="Medical Malpractice">Medical Malpractice</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
 
                         <div class="form-section-title">Services Requested</div>
                         <div class="form-group">
                             <label>What service(s) do you need? *</label>
-                            <select class="form-control" required>
+                            <select name="service_needed" class="form-control" required>
                                 <option value="">Select Service</option>
-                                <option>MSA Administration</option>
-                                <option>Professional Administration</option>
-                                <option>Lien Resolution</option>
-                                <option>Settlement Consulting</option>
-                                <option>Trust Services</option>
-                                <option>Multiple Services (describe below)</option>
+                                <option value="MSA Administration">MSA Administration</option>
+                                <option value="Professional Administration">Professional Administration</option>
+                                <option value="Lien Resolution">Lien Resolution</option>
+                                <option value="Settlement Consulting">Settlement Consulting</option>
+                                <option value="Trust Services">Trust Services</option>
+                                <option value="Multiple Services">Multiple Services (describe below)</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label>Settlement Amount (if known)</label>
-                            <input type="text" class="form-control" placeholder="$">
+                            <input type="text" name="settlement_amount" class="form-control" placeholder="$">
                         </div>
                         <div class="form-group">
                             <label>Insurance Carrier</label>
-                            <input type="text" class="form-control" placeholder="Name of Carrier">
+                            <input type="text" name="insurance_carrier" class="form-control" placeholder="Name of Carrier">
                         </div>
 
                         <div class="form-section-title">Additional Details</div>
                         <div class="form-group">
                             <label>Notes / Case Summary</label>
-                            <textarea class="form-control" rows="4"
+                            <textarea name="notes" class="form-control" rows="4"
                                 placeholder="Please provide any relevant case details, special circumstances, or additional notes..."></textarea>
                         </div>
                         <div class="form-group">
@@ -373,10 +376,17 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-primary"
+                        <button type="submit" id="referralSubmitBtn" class="btn btn-primary"
                             style="width:100%;justify-content:center;margin-top:1rem;"><span><i
                                     class="fas fa-paper-plane"></i> Submit Referral</span></button>
                     </form>
+                    <div id="referralSuccess" style="display:none; text-align:center; padding:3rem 2rem;">
+                        <div style="width:70px;height:70px;border-radius:50%;background:rgba(201,168,76,0.15);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;">
+                            <i class="fas fa-check" style="font-size:1.8rem;color:#c9a84c;"></i>
+                        </div>
+                        <h3 style="color:#e2e8f0;font-family:'Playfair Display',serif;margin-bottom:0.75rem;">Referral Submitted</h3>
+                        <p style="color:#94a3b8;font-size:0.95rem;line-height:1.6;">Thank you for your referral. Our team will acknowledge receipt within 24 hours and begin reviewing your case immediately.</p>
+                    </div>
                 </div>
 
                 <!-- Sidebar -->
@@ -458,13 +468,53 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 MED ASIDE. All rights reserved.</p>
                 <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Sitemap</a>
+                    <a href="legal.html#privacy">Privacy Policy</a>
+                    <a href="legal.html#terms">Terms of Service</a>
+                    <a href="legal.html">Legal</a>
                 </div>
             </div>
+
+            <p style="font-size:0.65rem;color:rgba(255,255,255,0.3);margin-top:0.75rem;line-height:1.5;max-width:800px;margin-left:auto;margin-right:auto;text-align:center;">MED ASIDE is not a law firm and does not provide legal advice. Information on this site is for general purposes only. By using this site, you agree to our <a href="legal.html#terms" style="color:rgba(201,168,76,0.5);">Terms of Service</a> and <a href="legal.html#privacy" style="color:rgba(201,168,76,0.5);">Privacy Policy</a>. <a href="legal.html#consent" style="color:rgba(201,168,76,0.5);">Communication preferences &amp; opt-out</a>.</p>
+            <div style="text-align:center;padding:0.75rem 0 0;border-top:1px solid rgba(255,255,255,0.05);margin-top:0.75rem;"><p style="font-size:0.6rem;color:rgba(255,255,255,0.25);letter-spacing:0.5px;">Website custom built by Brandon Bible, Adaptation Living LLC &mdash; <a href="mailto:info@adaptationliving.com" style="color:rgba(255,255,255,0.3);">info@adaptationliving.com</a></p></div>
         </div>
     </footer>
+
+    <!-- ==================== REFERRAL FORM (Web3Forms) ==================== -->
+    <script>
+    (function() {
+        var form = document.getElementById('referralForm');
+        if (!form) return;
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var hp = form.querySelector('[name="botcheck"]');
+            if (hp && hp.value) return;
+            var btn = document.getElementById('referralSubmitBtn');
+            var origHTML = btn.innerHTML;
+            btn.disabled = true;
+            btn.innerHTML = '<span><i class="fas fa-spinner fa-spin"></i> Submitting...</span>';
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                if (data.success) {
+                    form.style.display = 'none';
+                    document.getElementById('referralSuccess').style.display = 'block';
+                } else {
+                    alert('Something went wrong. Please try again or contact us directly.');
+                    btn.disabled = false;
+                    btn.innerHTML = origHTML;
+                }
+            })
+            .catch(function() {
+                alert('Something went wrong. Please try again or contact us directly.');
+                btn.disabled = false;
+                btn.innerHTML = origHTML;
+            });
+        });
+    })();
+    </script>
 
     <script>
         document.getElementById('mobileToggle').addEventListener('click', function () {

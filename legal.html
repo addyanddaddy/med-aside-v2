@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Disclosures, Privacy & Terms | MED ASIDE - Medicare Set-Aside Administration</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+    <meta name="description"
+        content="MED ASIDE legal disclosures, privacy policy (CCPA/CPRA compliant), terms of service, HIPAA notice, consent to contact, and accessibility statement.">
+    <link rel="canonical" href="https://www.medaside.com/legal">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Legal Disclosures, Privacy & Terms | MED ASIDE">
+    <meta property="og:description"
+        content="MED ASIDE legal disclosures, privacy policy, terms of service, HIPAA notice, and accessibility statement.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.medaside.com/legal">
+    <meta property="og:image" content="https://www.medaside.com/assets/images/hero.png">
+    <meta property="og:site_name" content="MED ASIDE">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Legal Disclosures, Privacy & Terms | MED ASIDE">
+    <meta name="twitter:description"
+        content="MED ASIDE legal disclosures, privacy policy, terms of service, HIPAA notice, and accessibility statement.">
+    <meta name="twitter:image" content="https://www.medaside.com/assets/images/hero.png">
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.medaside.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Legal",
+                "item": "https://www.medaside.com/legal"
+            }
+        ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Legal Page Styles */
+        .legal-nav {
+            background: rgba(26, 74, 122, 0.15);
+            border: 1px solid rgba(201, 168, 76, 0.2);
+            border-radius: 12px;
+            padding: 2rem 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .legal-nav h3 {
+            font-family: 'Playfair Display', serif;
+            color: #c9a84c;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+        }
+
+        .legal-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 0.6rem;
+        }
+
+        .legal-nav ul li a {
+            color: rgba(255, 255, 255, 0.75);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legal-nav ul li a:hover {
+            color: #c9a84c;
+        }
+
+        .legal-nav ul li a i {
+            color: #c9a84c;
+            font-size: 0.7rem;
+            flex-shrink: 0;
+        }
+
+        .legal-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .legal-section {
+            background: rgba(26, 74, 122, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 3rem 3rem 2.5rem;
+            margin-bottom: 2.5rem;
+            scroll-margin-top: 120px;
+        }
+
+        .legal-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            color: #ffffff;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .legal-section h2 i {
+            color: #c9a84c;
+            font-size: 1.4rem;
+        }
+
+        .legal-section .section-date {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.35);
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        .legal-section h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: #c9a84c;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .legal-section h4 {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .legal-section p,
+        .legal-section li {
+            color: rgba(255, 255, 255, 0.65);
+            line-height: 1.75;
+            font-size: 0.95rem;
+        }
+
+        .legal-section ul,
+        .legal-section ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .legal-section ul li,
+        .legal-section ol li {
+            margin-bottom: 0.4rem;
+        }
+
+        .legal-section a {
+            color: #c9a84c;
+            text-decoration: underline;
+            text-decoration-color: rgba(201, 168, 76, 0.3);
+            transition: text-decoration-color 0.2s;
+        }
+
+        .legal-section a:hover {
+            text-decoration-color: #c9a84c;
+        }
+
+        .legal-section .highlight-box {
+            background: rgba(201, 168, 76, 0.08);
+            border-left: 3px solid #c9a84c;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .legal-section .highlight-box p {
+            margin: 0;
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 0.9rem;
+        }
+
+        .legal-section .highlight-box strong {
+            color: #c9a84c;
+        }
+
+        .back-to-top {
+            display: inline-block;
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.35);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .back-to-top:hover {
+            color: #c9a84c;
+        }
+
+        @media (max-width: 768px) {
+            .legal-section {
+                padding: 2rem 1.5rem 1.5rem;
+            }
+
+            .legal-section h2 {
+                font-size: 1.4rem;
+            }
+
+            .legal-nav ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <a href="mailto:info@medaside.com"><i class="fas fa-envelope"></i> info@medaside.com</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="portal.html" class="portal-btn"><i class="fas fa-lock"></i> Client Portal</a>
+                <a href="portal.html">Attorney Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="MED ASIDE Logo">
+                    <span class="logo-text">MED ASIDE<small>Medicare Set-Aside Experts</small></span>
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu"><i
+                        class="fas fa-bars"></i></button>
+                <div class="main-nav" id="mainNav">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="has-dropdown">
+                            <a href="services.html">Services</a>
+                            <div class="dropdown">
+                                <a href="services.html#msa">MSA Administration</a>
+                                <a href="services.html#professional">Professional Administration</a>
+                                <a href="services.html#lien">Lien Resolution</a>
+                                <a href="services.html#consulting">Settlement Consulting</a>
+                                <a href="services.html#trust">Trust Services</a>
+                            </div>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Resources</a>
+                            <div class="dropdown">
+                                <a href="#">Industry News</a>
+                                <a href="#">Settlement Guides</a>
+                                <a href="#">FAQ</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="referral.html" class="btn btn-referral btn-small"><span>Refer a Case</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> <span>Legal</span>
+            </div>
+            <h1>Legal Disclosures, <span class="text-gold">Privacy &amp; Terms</span></h1>
+            <p>Transparency and compliance are at the core of everything we do. Please review these important disclosures carefully.</p>
+        </div>
+    </section>
+
+    <!-- Legal Content -->
+    <section style="padding: var(--section-pad); background: var(--navy-800);">
+        <div class="legal-content">
+
+            <!-- Table of Contents -->
+            <div class="legal-nav" id="top">
+                <h3><i class="fas fa-list-ul"></i> Quick Navigation</h3>
+                <ul>
+                    <li><a href="#disclaimers"><i class="fas fa-chevron-right"></i> Legal Disclaimers</a></li>
+                    <li><a href="#privacy"><i class="fas fa-chevron-right"></i> Privacy Policy (CCPA/CPRA)</a></li>
+                    <li><a href="#terms"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                    <li><a href="#consent"><i class="fas fa-chevron-right"></i> Consent to Contact (TCPA)</a></li>
+                    <li><a href="#hipaa"><i class="fas fa-chevron-right"></i> HIPAA &amp; PHI Notice</a></li>
+                    <li><a href="#accessibility"><i class="fas fa-chevron-right"></i> Accessibility Statement</a></li>
+                </ul>
+            </div>
+
+            <!-- ============================================================ -->
+            <!-- SECTION 1: LEGAL DISCLAIMERS -->
+            <!-- ============================================================ -->
+            <div class="legal-section" id="disclaimers">
+                <h2><i class="fas fa-gavel"></i> Legal Disclaimers</h2>
+                <span class="section-date">Last updated: March 2026</span>
+
+                <h3>1.1 Not a Law Firm; No Legal Advice</h3>
+                <p>MED ASIDE is <strong>not a law firm</strong> and does not provide legal advice, legal opinions, or legal representation of any kind. No information provided by MED ASIDE &mdash; whether on this website, through written or verbal communications, in marketing materials, during consultations, or through any other medium &mdash; shall be construed as legal advice or as creating an attorney-client relationship between you and MED ASIDE or any of its employees, contractors, or affiliates.</p>
+                <p>If you require legal advice regarding your settlement, workers' compensation claim, personal injury matter, Medicare compliance obligations, or any other legal matter, you should consult a licensed attorney in your jurisdiction. MED ASIDE strongly encourages all clients and prospective clients to seek independent legal counsel before making decisions that may affect their legal rights.</p>
+
+                <h3>1.2 Not a Medical Provider; No Medical Advice</h3>
+                <p>MED ASIDE is <strong>not a medical provider, healthcare facility, or healthcare practitioner</strong>. We do not diagnose, treat, or provide medical opinions. Nothing on this website or in our communications should be interpreted as medical advice. Any references to medical treatments, procedures, or conditions within the context of Medicare Set-Aside administration are solely for the purposes of case administration and CMS compliance. Always consult a qualified healthcare provider for medical decisions.</p>
+
+                <h3>1.3 No Guarantee of CMS Approval</h3>
+                <p>MED ASIDE does not and <strong>cannot guarantee</strong> that the Centers for Medicare &amp; Medicaid Services (CMS) will approve any Medicare Set-Aside (MSA) arrangement, amount, allocation, or submission. CMS retains sole discretion over the review and approval of MSA proposals. While MED ASIDE applies industry best practices and adheres to current CMS guidelines and Workers' Compensation Medicare Set-Aside Reference Guide (WCMSA) standards, CMS approval is never guaranteed, and outcomes may vary based on the specific facts and circumstances of each case.</p>
+
+                <h3>1.4 No Guarantee of Outcomes</h3>
+                <p>MED ASIDE makes <strong>no guarantees, warranties, or representations</strong> regarding the outcome of any settlement, lien resolution, MSA administration, trust administration, or any other service we provide. Past results do not guarantee future outcomes. Every case is unique, and results depend on the specific facts, applicable law, CMS guidelines in effect at the time, and numerous other factors outside of MED ASIDE's control.</p>
+
+                <h3>1.5 General and Educational Purposes Only</h3>
+                <p>All information provided on this website, including but not limited to articles, guides, FAQs, blog posts, infographics, and service descriptions, is intended for <strong>general informational and educational purposes only</strong>. Such information does not constitute professional advice of any kind and should not be relied upon as a substitute for consultation with qualified legal, medical, financial, or Medicare compliance professionals.</p>
+
+                <h3>1.6 Regulatory Changes</h3>
+                <p>Medicare regulations, CMS policies, workers' compensation laws, and related rules and guidelines are <strong>subject to frequent change</strong>. Information presented on this website or in our communications reflects our understanding as of the date of publication and may not reflect the most current legal or regulatory developments. MED ASIDE endeavors to keep its materials up to date but cannot guarantee that all information is current at the time you access it. You should always verify current requirements with qualified professionals and official CMS resources.</p>
+
+                <h3>1.7 Third-Party Links</h3>
+                <p>This website may contain links to third-party websites, resources, or services for your convenience and reference. MED ASIDE <strong>does not control, endorse, or assume responsibility</strong> for the content, privacy policies, accuracy, or practices of any third-party websites or resources. Accessing third-party links is at your own risk. The inclusion of a link does not imply affiliation, sponsorship, or endorsement by MED ASIDE.</p>
+
+                <h3>1.8 California-Specific Services</h3>
+                <p>MED ASIDE is headquartered in Van Nuys, California (91410). While we may serve clients in multiple jurisdictions, our operations, business practices, and this website are <strong>primarily governed by the laws of the State of California</strong>. Services, fee structures, and compliance practices may vary by jurisdiction. If you are located outside of California, you should independently verify that our services meet the requirements of your jurisdiction.</p>
+
+                <div class="highlight-box">
+                    <p><strong>Important:</strong> By using this website or engaging MED ASIDE's services, you acknowledge that you have read and understood these disclaimers. If you do not agree with any part of these disclaimers, please do not use this website or our services.</p>
+                </div>
+
+                <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to top</a>
+            </div>
+
+            <!-- ============================================================ -->
+            <!-- SECTION 2: PRIVACY POLICY -->
+            <!-- ============================================================ -->
+            <div class="legal-section" id="privacy">
+                <h2><i class="fas fa-shield-alt"></i> Privacy Policy</h2>
+                <span class="section-date">Last updated: March 2026 &mdash; CCPA/CPRA Compliant</span>
+
+                <p>MED ASIDE (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy describes how we collect, use, disclose, and safeguard your information when you visit our website (www.medaside.com) or engage our services. This policy complies with the California Consumer Privacy Act (CCPA) as amended by the California Privacy Rights Act (CPRA).</p>
+
+                <h3>2.1 Information We Collect</h3>
+
+                <h4>Personal Information</h4>
+                <p>We may collect the following categories of personal information:</p>
+                <ul>
+                    <li><strong>Identifiers:</strong> Full name, email address, phone number, mailing address, and other contact details you provide through forms, phone calls, or correspondence.</li>
+                    <li><strong>Professional information:</strong> Attorney name, firm name, bar number, insurance carrier name, adjuster name, employer information, and professional role/title.</li>
+                    <li><strong>Financial information:</strong> Settlement amounts, MSA allocation amounts, trust account details, and billing information as necessary for service delivery.</li>
+                </ul>
+
+                <h4>Case and Medical Information</h4>
+                <p>In the course of providing MSA administration, lien resolution, and related services, we may receive:</p>
+                <ul>
+                    <li>Workers' compensation or personal injury case details (claim numbers, dates of injury, jurisdictions).</li>
+                    <li>Medical records, treatment histories, diagnoses, and prognoses as submitted by attorneys, claimants, or insurance carriers for the purpose of MSA preparation and administration.</li>
+                    <li>Medicare beneficiary information, Health Insurance Claim Numbers (HICNs), and Medicare Beneficiary Identifiers (MBIs).</li>
+                    <li>CMS correspondence and MSA approval documentation.</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong>HIPAA Acknowledgment:</strong> MED ASIDE may receive Protected Health Information (PHI) as defined under the Health Insurance Portability and Accountability Act (HIPAA) in the course of MSA administration. Please see our <a href="#hipaa">HIPAA &amp; PHI Notice</a> for full details on how we handle PHI.</p>
+                </div>
+
+                <h4>Usage Data</h4>
+                <p>We automatically collect certain information when you visit our website, including:</p>
+                <ul>
+                    <li>IP address, browser type and version, operating system.</li>
+                    <li>Pages visited, time and date of visit, time spent on pages, referring URL.</li>
+                    <li>Device information (device type, screen resolution).</li>
+                    <li>Cookies, pixel tags, and similar tracking technologies (see Section 2.6).</li>
+                </ul>
+
+                <h3>2.2 How We Use Your Information</h3>
+                <p>We use the information we collect for the following purposes:</p>
+                <ul>
+                    <li><strong>Case evaluation and service delivery:</strong> To evaluate referred cases, prepare MSA allocations, administer MSA accounts, resolve liens, provide settlement consulting, and deliver trust services.</li>
+                    <li><strong>Communication:</strong> To respond to your inquiries, provide case updates, send service-related notifications, and communicate about your account or services.</li>
+                    <li><strong>Compliance:</strong> To comply with CMS requirements, Medicare reporting obligations, applicable federal and state laws, and regulatory mandates.</li>
+                    <li><strong>Website improvement:</strong> To analyze usage patterns, improve website functionality, and enhance user experience.</li>
+                    <li><strong>Legal obligations:</strong> To establish, exercise, or defend legal claims, and to comply with court orders, subpoenas, or other legal processes.</li>
+                </ul>
+
+                <h3>2.3 How We Protect Your Information</h3>
+                <p>MED ASIDE implements and maintains reasonable administrative, technical, and physical safeguards designed to protect the confidentiality, integrity, and availability of your personal information, including:</p>
+                <ul>
+                    <li><strong>Encryption:</strong> Data is encrypted in transit using TLS/SSL protocols and at rest where technically feasible.</li>
+                    <li><strong>Access controls:</strong> Access to personal and case information is restricted to authorized personnel on a need-to-know basis, with role-based access controls and unique login credentials.</li>
+                    <li><strong>HIPAA-compliant handling:</strong> Case files containing PHI are handled in accordance with HIPAA-level safeguards (see <a href="#hipaa">Section 5</a>), including secure storage, audit trails, and controlled access.</li>
+                    <li><strong>Employee training:</strong> Personnel who handle personal or medical information receive training on privacy, security, and compliance obligations.</li>
+                    <li><strong>Incident response:</strong> We maintain procedures for detecting, responding to, and reporting security incidents and data breaches.</li>
+                </ul>
+                <p>While we take reasonable measures to protect your information, no method of transmission over the internet or electronic storage is 100% secure. We cannot guarantee absolute security.</p>
+
+                <h3>2.4 Information Sharing and Disclosure</h3>
+                <p>MED ASIDE does <strong>not sell your personal information</strong> to third parties. We do not share your personal information except in the following circumstances:</p>
+                <ul>
+                    <li><strong>With your consent or at your direction:</strong> We share case-related information with parties you have authorized, such as your attorney of record, insurance carrier or adjuster, treating physicians, and CMS &mdash; as necessary for case administration and service delivery.</li>
+                    <li><strong>Service providers:</strong> We may share information with trusted third-party service providers who perform services on our behalf (e.g., secure document storage, IT support, accounting), subject to confidentiality agreements.</li>
+                    <li><strong>CMS and government agencies:</strong> We submit information to CMS and other government agencies as required for MSA review, approval, annual attestation, and compliance purposes.</li>
+                    <li><strong>Legal requirements:</strong> We may disclose information when required by law, regulation, court order, subpoena, or other legal process, or when we believe in good faith that disclosure is necessary to protect our rights, your safety, or the safety of others.</li>
+                    <li><strong>Business transfers:</strong> In the event of a merger, acquisition, reorganization, or sale of assets, your information may be transferred as part of that transaction, subject to applicable privacy requirements.</li>
+                </ul>
+
+                <h3>2.5 Contact Form Processing (Web3Forms)</h3>
+                <p>Our website contact forms are processed through Web3Forms, a third-party form submission service. When you submit a contact form, the information you provide (name, email, phone, message content, and any other fields) is transmitted via Web3Forms to our designated email inbox. Web3Forms processes form data in transit and does not permanently store your submissions on their servers. For details on Web3Forms' data handling practices, please visit their privacy policy at <a href="https://web3forms.com/privacy" target="_blank" rel="noopener">web3forms.com/privacy</a>.</p>
+
+                <h3>2.6 Cookies and Tracking Technologies</h3>
+                <p>Our website may use cookies and similar technologies to:</p>
+                <ul>
+                    <li>Enable essential website functionality (session management, security).</li>
+                    <li>Analyze website traffic and usage patterns (analytics cookies).</li>
+                    <li>Remember your preferences and settings.</li>
+                </ul>
+                <p>You can control cookies through your browser settings. Disabling cookies may affect website functionality. We do not use cookies for advertising purposes. We do not respond to Do Not Track (DNT) signals at this time, as there is no uniform standard for DNT.</p>
+
+                <h3>2.7 Your California Privacy Rights (CCPA/CPRA)</h3>
+                <p>If you are a California resident, you have the following rights under the CCPA as amended by the CPRA:</p>
+
+                <h4>Right to Know</h4>
+                <p>You have the right to request that we disclose the categories and specific pieces of personal information we have collected about you, the categories of sources from which we collected your information, the business or commercial purposes for collection, and the categories of third parties with whom we share your information.</p>
+
+                <h4>Right to Delete</h4>
+                <p>You have the right to request the deletion of your personal information that we have collected, subject to certain exceptions (e.g., where retention is required to complete a transaction, comply with legal obligations, detect security incidents, or exercise legal claims).</p>
+
+                <h4>Right to Correct</h4>
+                <p>You have the right to request correction of inaccurate personal information that we maintain about you.</p>
+
+                <h4>Right to Opt Out of Sale or Sharing</h4>
+                <p>MED ASIDE does <strong>not sell</strong> your personal information and does <strong>not share</strong> your personal information for cross-context behavioral advertising purposes. Therefore, there is no need to opt out of such activities. However, should our practices change, we will provide a conspicuous &ldquo;Do Not Sell or Share My Personal Information&rdquo; link on our website.</p>
+
+                <h4>Right to Limit Use of Sensitive Personal Information</h4>
+                <p>To the extent we collect sensitive personal information (such as Social Security numbers, health information, or financial account details), we use it only as necessary for service delivery and compliance &mdash; not for purposes that would trigger a right to limit under the CPRA.</p>
+
+                <h4>Right to Non-Discrimination</h4>
+                <p>We will not discriminate against you for exercising any of your CCPA/CPRA rights. We will not deny you services, charge different prices, provide a different level of quality, or suggest that you will receive different treatment for exercising your rights.</p>
+
+                <h4>How to Exercise Your Rights</h4>
+                <p>To submit a request to know, delete, correct, or exercise any other privacy right, please contact us using one of the following methods:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:info@medaside.com">info@medaside.com</a> &mdash; Include &ldquo;Privacy Rights Request&rdquo; in the subject line.</li>
+                    <li><strong>Mail:</strong> MED ASIDE, Privacy Rights Request, PO Box 8294, Van Nuys, CA 91410.</li>
+                </ul>
+                <p>We will verify your identity before processing your request. We may ask for information sufficient to verify you are the person about whom we collected personal information (or an authorized agent). We will respond to verifiable requests within 45 calendar days. If we require additional time (up to an additional 45 days), we will notify you in writing.</p>
+                <p>You may designate an authorized agent to submit a request on your behalf. The authorized agent must provide written proof of authorization, and we may still require you to verify your identity directly with us.</p>
+
+                <h3>2.8 Data Retention</h3>
+                <p>We retain personal information for as long as reasonably necessary to fulfill the purposes for which it was collected, provide our services, comply with legal obligations (including CMS record-keeping requirements), resolve disputes, and enforce our agreements. Case-related records may be retained for the duration required by applicable federal and state regulations, which may extend beyond the conclusion of active services.</p>
+
+                <h3>2.9 Children's Privacy</h3>
+                <p>Our website and services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children under 18. If we become aware that we have collected personal information from a child under 18 without parental consent, we will take steps to delete such information promptly. If you believe we have inadvertently collected information from a minor, please contact us at <a href="mailto:info@medaside.com">info@medaside.com</a>.</p>
+
+                <h3>2.10 Changes to This Privacy Policy</h3>
+                <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. When we make material changes, we will update the &ldquo;Last updated&rdquo; date at the top of this section. We encourage you to review this page periodically. Your continued use of our website or services after changes are posted constitutes your acceptance of the updated Privacy Policy.</p>
+
+                <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to top</a>
+            </div>
+
+            <!-- ============================================================ -->
+            <!-- SECTION 3: TERMS OF SERVICE -->
+            <!-- ============================================================ -->
+            <div class="legal-section" id="terms">
+                <h2><i class="fas fa-file-contract"></i> Terms of Service</h2>
+                <span class="section-date">Last updated: March 2026</span>
+
+                <h3>3.1 Acceptance of Terms</h3>
+                <p>By accessing or using the MED ASIDE website (www.medaside.com) or engaging our services, you agree to be bound by these Terms of Service (&ldquo;Terms&rdquo;), our <a href="#privacy">Privacy Policy</a>, and all applicable laws and regulations. If you do not agree to these Terms, you must not access or use our website or services. These Terms constitute a legally binding agreement between you and MED ASIDE.</p>
+
+                <h3>3.2 Description of Services</h3>
+                <p>MED ASIDE provides the following services in connection with workers' compensation and liability/personal injury settlements:</p>
+                <ul>
+                    <li><strong>Medicare Set-Aside (MSA) Administration:</strong> Preparation, submission, and ongoing administration of MSA allocations, including CMS submissions, annual attestations, and fund management.</li>
+                    <li><strong>Professional Administration:</strong> Comprehensive administration of settlement funds, including medical bill review, payment processing, provider coordination, and compliance monitoring.</li>
+                    <li><strong>Lien Resolution:</strong> Identification, negotiation, and resolution of Medicare conditional payment liens, Medicaid liens, ERISA liens, and other healthcare-related liens.</li>
+                    <li><strong>Settlement Consulting:</strong> Pre-settlement analysis, MSA cost projections, settlement structuring guidance, and compliance planning.</li>
+                    <li><strong>Trust Services:</strong> Coordination with qualified settlement funds, special needs trusts, and Medicare Set-Aside trusts.</li>
+                    <li><strong>Case Referrals:</strong> Acceptance of case referrals from attorneys, insurance professionals, and other industry stakeholders.</li>
+                </ul>
+
+                <h3>3.3 Not Legal Representation</h3>
+                <div class="highlight-box">
+                    <p><strong>MED ASIDE is an administration and consulting firm, not a law firm.</strong> Our services do not constitute legal representation, and no attorney-client relationship is formed by your use of our website or services. MED ASIDE does not act as your attorney and cannot provide legal advice. We strongly recommend that you retain independent legal counsel for all legal matters related to your settlement, claim, or case.</p>
+                </div>
+
+                <h3>3.4 Form Submissions and Inquiries</h3>
+                <p>Submitting a contact form, referral form, intake form, or any other inquiry through this website or via email, phone, or other communication constitutes an <strong>inquiry only</strong> and does not create a service agreement, engagement, contract, or obligation on the part of MED ASIDE. We reserve the right to accept or decline any case or inquiry at our sole discretion.</p>
+
+                <h3>3.5 Formal Engagement Requirements</h3>
+                <p>All formal engagements with MED ASIDE require a <strong>separate, written service agreement</strong> signed by both parties. No services will commence, and no obligations arise, until a written engagement agreement has been fully executed. The terms of any signed service agreement will govern the specific engagement and, where conflicting, will supersede these general Terms of Service.</p>
+
+                <h3>3.6 User Responsibilities</h3>
+                <p>When using our website or services, you agree to:</p>
+                <ul>
+                    <li>Provide accurate, complete, and current information.</li>
+                    <li>Not use our website for any unlawful, fraudulent, or harmful purpose.</li>
+                    <li>Not attempt to gain unauthorized access to our systems, data, or accounts.</li>
+                    <li>Not reproduce, distribute, modify, or create derivative works from our website content without our written consent.</li>
+                    <li>Not submit false, misleading, or fraudulent information in connection with any case or inquiry.</li>
+                    <li>Comply with all applicable laws and regulations.</li>
+                </ul>
+
+                <h3>3.7 Intellectual Property</h3>
+                <p>All content on this website, including but not limited to text, graphics, logos, images, trademarks, service marks, trade names, software, and the design, selection, and arrangement thereof, is the property of MED ASIDE or its licensors and is protected by United States and international copyright, trademark, and other intellectual property laws. &ldquo;MED ASIDE&rdquo; and the MED ASIDE logo are trademarks of MED ASIDE. You may not use, reproduce, distribute, modify, or display any of our intellectual property without our prior written consent.</p>
+
+                <h3>3.8 Limitation of Liability</h3>
+                <p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, MED ASIDE AND ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, CONTRACTORS, AND AFFILIATES SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO DAMAGES FOR LOSS OF PROFITS, GOODWILL, DATA, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR IN CONNECTION WITH:</p>
+                <ul>
+                    <li>Your use of or inability to use our website or services.</li>
+                    <li>Any errors, omissions, or inaccuracies in website content.</li>
+                    <li>Any CMS decision regarding an MSA submission, review, or approval.</li>
+                    <li>Any third-party actions or conduct.</li>
+                    <li>Any unauthorized access to or alteration of your information.</li>
+                    <li>Any outcome of a settlement, lien resolution, or case administration.</li>
+                </ul>
+                <p>IN NO EVENT SHALL MED ASIDE'S TOTAL AGGREGATE LIABILITY TO YOU FOR ALL CLAIMS ARISING OUT OF OR RELATED TO THESE TERMS OR YOUR USE OF THE WEBSITE EXCEED THE AMOUNT YOU HAVE PAID TO MED ASIDE FOR SERVICES IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR ONE HUNDRED DOLLARS ($100.00), WHICHEVER IS GREATER. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES, SO SOME OF THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.</p>
+
+                <h3>3.9 Indemnification</h3>
+                <p>You agree to indemnify, defend, and hold harmless MED ASIDE and its officers, directors, employees, agents, contractors, and affiliates from and against any and all claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or related to: (a) your use of our website or services; (b) your violation of these Terms; (c) your violation of any applicable law or regulation; (d) your infringement of any third-party rights; or (e) any information you provide to MED ASIDE that is inaccurate, misleading, or fraudulent.</p>
+
+                <h3>3.10 Dispute Resolution</h3>
+                <p>These Terms shall be governed by and construed in accordance with the laws of the <strong>State of California</strong>, without regard to its conflict of law provisions. Any dispute, claim, or controversy arising out of or relating to these Terms or your use of our website or services shall be resolved exclusively in the state or federal courts located in <strong>Los Angeles County, California</strong>. You consent to the personal jurisdiction and venue of such courts and waive any objection based on inconvenient forum.</p>
+                <p>Before initiating any formal legal proceeding, you agree to first attempt to resolve any dispute informally by contacting MED ASIDE at <a href="mailto:info@medaside.com">info@medaside.com</a>. We will make good faith efforts to resolve any concern or dispute within thirty (30) days.</p>
+
+                <h3>3.11 Severability</h3>
+                <p>If any provision of these Terms is found to be invalid, illegal, or unenforceable by a court of competent jurisdiction, such provision shall be modified to the minimum extent necessary to make it valid and enforceable, or if modification is not possible, shall be severed from these Terms. The invalidity or unenforceability of any provision shall not affect the validity or enforceability of the remaining provisions, which shall continue in full force and effect.</p>
+
+                <h3>3.12 Waiver</h3>
+                <p>The failure of MED ASIDE to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision. Any waiver must be in writing and signed by an authorized representative of MED ASIDE.</p>
+
+                <h3>3.13 Entire Agreement</h3>
+                <p>These Terms, together with the Privacy Policy and any signed service agreements, constitute the entire agreement between you and MED ASIDE regarding the subject matter hereof and supersede all prior or contemporaneous communications, proposals, and agreements, whether oral or written, between you and MED ASIDE regarding such subject matter. In the event of a conflict between these Terms and a signed service agreement, the service agreement shall control.</p>
+
+                <h3>3.14 Changes to Terms</h3>
+                <p>MED ASIDE reserves the right to modify these Terms at any time. When we make material changes, we will update the &ldquo;Last updated&rdquo; date at the top of this section and may provide additional notice as appropriate. Your continued use of our website or services after changes are posted constitutes your acceptance of the revised Terms. If you do not agree to the updated Terms, you must discontinue use of the website and services.</p>
+
+                <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to top</a>
+            </div>
+
+            <!-- ============================================================ -->
+            <!-- SECTION 4: CONSENT TO CONTACT -->
+            <!-- ============================================================ -->
+            <div class="legal-section" id="consent">
+                <h2><i class="fas fa-comments"></i> Consent to Contact &amp; Communication Preferences</h2>
+                <span class="section-date">Last updated: March 2026 &mdash; TCPA &amp; California Law Compliant</span>
+
+                <h3>4.1 Consent by Form Submission</h3>
+                <p>By submitting any form on the MED ASIDE website (including but not limited to contact forms, referral forms, intake forms, and information request forms), or by providing your contact information via email, phone, or other means, you expressly consent to be contacted by MED ASIDE regarding your inquiry, case, or the services you have expressed interest in. This consent includes contact by:</p>
+                <ul>
+                    <li><strong>Email:</strong> Service-related communications, case updates, responses to inquiries, and informational content.</li>
+                    <li><strong>Telephone:</strong> Calls to the phone number(s) you provide, including calls regarding your case, service delivery, and follow-up on inquiries.</li>
+                    <li><strong>Text message (SMS/MMS):</strong> Messages to the mobile phone number you provide, including case updates, appointment reminders, and service-related notifications.</li>
+                </ul>
+
+                <h3>4.2 TCPA Disclosure</h3>
+                <div class="highlight-box">
+                    <p><strong>Telephone Consumer Protection Act (TCPA) Notice:</strong> By providing your phone number and submitting a form or inquiry, you consent to receive calls and/or text messages from MED ASIDE or its authorized representatives, including calls or messages made using an automated telephone dialing system or prerecorded/artificial voice, at the phone number(s) you provide. Your consent is not a condition of purchasing any services. Standard message and data rates may apply.</p>
+                </div>
+
+                <h3>4.3 Frequency of Contact</h3>
+                <p>The frequency of our communications will vary depending on the nature of your inquiry and the status of any active case. Generally:</p>
+                <ul>
+                    <li><strong>Inquiry responses:</strong> You may receive 1&ndash;3 communications in response to an initial inquiry.</li>
+                    <li><strong>Active case communications:</strong> If you become a client, you will receive communications as necessary for case administration, which may include regular updates, requests for information, and compliance notifications.</li>
+                    <li><strong>Informational communications:</strong> Occasional updates about our services, industry news, or regulatory changes that may be relevant to your case.</li>
+                </ul>
+                <p>We will not contact you with excessive or unreasonable frequency.</p>
+
+                <h3>4.4 Your Right to Opt Out</h3>
+                <p>You have the right to revoke your consent to receive communications from MED ASIDE at any time. To opt out, you may use any of the following methods:</p>
+                <ul>
+                    <li><strong>Email:</strong> Send an email to <a href="mailto:info@medaside.com">info@medaside.com</a> with the subject line <strong>&ldquo;OPT OUT&rdquo;</strong>. Include your full name and the phone number and/or email address you wish to opt out.</li>
+                    <li><strong>Text message:</strong> Reply <strong>STOP</strong> to any text message you receive from MED ASIDE. You will receive a confirmation message that you have been unsubscribed.</li>
+                    <li><strong>Phone:</strong> Request to be removed from our contact list during any phone conversation with a MED ASIDE representative.</li>
+                    <li><strong>Mail:</strong> Send a written opt-out request to: MED ASIDE, PO Box 8294, Van Nuys, CA 91410.</li>
+                </ul>
+                <p>We will process your opt-out request within ten (10) business days. Please note that opting out of marketing or informational communications will not affect transactional or service-related communications necessary for the administration of an active case.</p>
+
+                <h3>4.5 Opting Out Does Not Affect Existing Service Agreements</h3>
+                <p>Revoking your consent to receive marketing or informational communications does <strong>not</strong> terminate any existing service agreement or engagement between you and MED ASIDE. If you have an active service agreement, MED ASIDE may still communicate with you as reasonably necessary for the performance of services, compliance obligations, and case administration as set forth in your service agreement.</p>
+
+                <h3>4.6 California-Specific: CCPA Right to Opt Out of Sale of Personal Information</h3>
+                <p>Under the California Consumer Privacy Act (CCPA) and the California Privacy Rights Act (CPRA), you have the right to opt out of the &ldquo;sale&rdquo; or &ldquo;sharing&rdquo; of your personal information. <strong>MED ASIDE does not sell your personal information and does not share your personal information for cross-context behavioral advertising.</strong> However, consistent with California law, we make this disclosure and affirm your right to exercise this opt-out at any time. If our practices change in the future, we will provide a &ldquo;Do Not Sell or Share My Personal Information&rdquo; mechanism on our website.</p>
+
+                <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to top</a>
+            </div>
+
+            <!-- ============================================================ -->
+            <!-- SECTION 5: HIPAA & PHI NOTICE -->
+            <!-- ============================================================ -->
+            <div class="legal-section" id="hipaa">
+                <h2><i class="fas fa-heartbeat"></i> HIPAA &amp; Protected Health Information Notice</h2>
+                <span class="section-date">Last updated: March 2026</span>
+
+                <h3>5.1 Receipt of Protected Health Information</h3>
+                <p>In the course of providing Medicare Set-Aside administration, lien resolution, settlement consulting, and related services, MED ASIDE may receive Protected Health Information (PHI) as defined under the Health Insurance Portability and Accountability Act of 1996 (HIPAA) and its implementing regulations. PHI may include, but is not limited to:</p>
+                <ul>
+                    <li>Medical records, treatment notes, and diagnostic reports.</li>
+                    <li>Prescription histories and pharmaceutical records.</li>
+                    <li>Physician and provider information.</li>
+                    <li>Medicare claim histories and billing information.</li>
+                    <li>Health Insurance Claim Numbers (HICNs) and Medicare Beneficiary Identifiers (MBIs).</li>
+                    <li>Any individually identifiable health information received in connection with case administration.</li>
+                </ul>
+
+                <h3>5.2 Safeguards</h3>
+                <p>MED ASIDE maintains comprehensive administrative, technical, and physical safeguards to protect PHI, including:</p>
+                <ul>
+                    <li><strong>Administrative safeguards:</strong> Designated privacy and security personnel, workforce training on PHI handling, policies and procedures governing access, use, and disclosure of PHI, and regular risk assessments.</li>
+                    <li><strong>Technical safeguards:</strong> Encryption of PHI in transit and at rest, secure access controls with unique user identification and authentication, audit logging and monitoring of access to systems containing PHI, and automatic session timeouts.</li>
+                    <li><strong>Physical safeguards:</strong> Restricted access to facilities and workstations where PHI is processed or stored, secure disposal of physical and electronic media containing PHI, and environmental controls for data storage infrastructure.</li>
+                </ul>
+
+                <h3>5.3 Use of PHI</h3>
+                <p>PHI received by MED ASIDE is used <strong>exclusively</strong> for purposes directly related to case administration, including:</p>
+                <ul>
+                    <li>Preparing and reviewing Medicare Set-Aside allocations.</li>
+                    <li>Submitting MSA proposals to CMS for review and approval.</li>
+                    <li>Administering MSA accounts and processing medical payments.</li>
+                    <li>Resolving Medicare conditional payment and other healthcare liens.</li>
+                    <li>Communicating with CMS, attorneys, and healthcare providers as necessary for case administration.</li>
+                    <li>Preparing annual attestations and compliance reports required by CMS.</li>
+                </ul>
+                <p>MED ASIDE does not use PHI for marketing, advertising, or any purpose unrelated to case administration and service delivery.</p>
+
+                <h3>5.4 Disclosure of PHI</h3>
+                <p>MED ASIDE discloses PHI only as necessary for case administration and only to the following parties:</p>
+                <ul>
+                    <li><strong>Centers for Medicare &amp; Medicaid Services (CMS):</strong> As required for MSA review, approval, attestation, and compliance.</li>
+                    <li><strong>Treating physicians and healthcare providers:</strong> As necessary to verify treatment, obtain medical records, or coordinate care within the scope of MSA administration.</li>
+                    <li><strong>Attorneys of record:</strong> Attorneys representing the claimant/injured party, as authorized and necessary for case coordination.</li>
+                    <li><strong>Insurance carriers and adjusters:</strong> As authorized and necessary for settlement administration and lien resolution.</li>
+                    <li><strong>As required by law:</strong> In response to valid legal process, court orders, or as otherwise required by applicable federal or state law.</li>
+                </ul>
+                <p>PHI is never disclosed for purposes unrelated to case administration, and all disclosures are limited to the minimum necessary information required to accomplish the intended purpose.</p>
+
+                <h3>5.5 Covered Entity Status</h3>
+                <div class="highlight-box">
+                    <p><strong>Important clarification:</strong> MED ASIDE is <strong>not a covered entity</strong> as defined under HIPAA (i.e., we are not a health plan, healthcare clearinghouse, or healthcare provider that conducts standard electronic transactions). However, as a matter of professional responsibility and best practice, MED ASIDE voluntarily maintains HIPAA-level protections for all PHI we receive. We handle all health information as if we were subject to the full requirements of the HIPAA Privacy Rule and Security Rule, because we believe this is the appropriate standard of care for the sensitive information entrusted to us.</p>
+                </div>
+                <p>Where MED ASIDE operates as a Business Associate of a covered entity, we will enter into a Business Associate Agreement (BAA) as required by HIPAA.</p>
+
+                <h3>5.6 Breach Notification</h3>
+                <p>In the unlikely event of a breach of unsecured PHI, MED ASIDE is committed to the following:</p>
+                <ul>
+                    <li><strong>Prompt investigation:</strong> We will promptly investigate any suspected or confirmed breach of PHI.</li>
+                    <li><strong>Notification:</strong> We will notify affected individuals and, where applicable, the covered entity with whom we have a Business Associate Agreement, without unreasonable delay and in no event later than sixty (60) calendar days after discovery of the breach.</li>
+                    <li><strong>Content of notice:</strong> Notification will include a description of the breach, the types of information involved, steps individuals should take to protect themselves, what MED ASIDE is doing to investigate and mitigate the breach, and contact information for further inquiries.</li>
+                    <li><strong>Regulatory reporting:</strong> We will report breaches to the U.S. Department of Health and Human Services (HHS) and applicable state attorneys general as required by law.</li>
+                    <li><strong>Mitigation:</strong> We will take reasonable steps to mitigate harmful effects of the breach.</li>
+                </ul>
+
+                <h3>5.7 Your Rights Regarding PHI</h3>
+                <p>While MED ASIDE may not be a HIPAA-covered entity in all contexts, we respect the spirit of HIPAA's individual rights provisions. If you are a claimant or injured party whose PHI we have received, you may:</p>
+                <ul>
+                    <li>Request access to the PHI we hold about you.</li>
+                    <li>Request correction of PHI you believe to be inaccurate.</li>
+                    <li>Request an accounting of disclosures of your PHI.</li>
+                    <li>Request restrictions on certain uses or disclosures (subject to our operational needs and legal obligations).</li>
+                </ul>
+                <p>To exercise these rights, please contact us at <a href="mailto:info@medaside.com">info@medaside.com</a> or by mail at MED ASIDE, PO Box 8294, Van Nuys, CA 91410.</p>
+
+                <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to top</a>
+            </div>
+
+            <!-- ============================================================ -->
+            <!-- SECTION 6: ACCESSIBILITY STATEMENT -->
+            <!-- ============================================================ -->
+            <div class="legal-section" id="accessibility">
+                <h2><i class="fas fa-universal-access"></i> Accessibility Statement</h2>
+                <span class="section-date">Last updated: March 2026</span>
+
+                <h3>6.1 Our Commitment</h3>
+                <p>MED ASIDE is committed to ensuring that our website and digital services are accessible to all individuals, including those with disabilities. We strive to conform to the <strong>Web Content Accessibility Guidelines (WCAG) 2.1, Level AA</strong> standards, as recommended by the World Wide Web Consortium (W3C). We believe that all users, regardless of ability, should be able to access the information and services we provide.</p>
+
+                <h3>6.2 Accessibility Features</h3>
+                <p>Our website incorporates the following accessibility features:</p>
+                <ul>
+                    <li><strong>Semantic HTML:</strong> Proper use of headings, landmarks, lists, and other semantic elements to support screen reader navigation.</li>
+                    <li><strong>Keyboard navigation:</strong> All interactive elements are accessible via keyboard navigation, including menus, forms, and links.</li>
+                    <li><strong>Alt text:</strong> Images include descriptive alternative text to convey meaning to users who cannot see them.</li>
+                    <li><strong>Color contrast:</strong> Text and interactive elements maintain sufficient color contrast ratios to ensure readability.</li>
+                    <li><strong>Resizable text:</strong> Text can be resized using browser zoom without loss of content or functionality.</li>
+                    <li><strong>Form labels:</strong> Form fields include descriptive labels and clear instructions for screen readers and assistive technology.</li>
+                    <li><strong>ARIA attributes:</strong> Accessible Rich Internet Applications (ARIA) attributes are used where appropriate to enhance accessibility of dynamic content.</li>
+                    <li><strong>Focus indicators:</strong> Visible focus indicators help keyboard users identify the currently focused element.</li>
+                    <li><strong>Skip navigation:</strong> Skip links allow keyboard users to bypass repetitive navigation content.</li>
+                </ul>
+
+                <h3>6.3 Ongoing Efforts</h3>
+                <p>Accessibility is an ongoing effort. We regularly review our website against WCAG 2.1 AA standards and work to remediate any identified issues. We integrate accessibility considerations into our development and content creation processes.</p>
+
+                <h3>6.4 Feedback and Assistance</h3>
+                <p>We welcome your feedback on the accessibility of our website. If you encounter any accessibility barriers, have difficulty accessing any content, or wish to request information in an alternative format, please contact us:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:info@medaside.com">info@medaside.com</a> &mdash; Include &ldquo;Accessibility&rdquo; in the subject line.</li>
+                    <li><strong>Mail:</strong> MED ASIDE, Accessibility Feedback, PO Box 8294, Van Nuys, CA 91410.</li>
+                </ul>
+                <p>We will make reasonable efforts to respond to accessibility feedback within five (5) business days and to provide the information or assistance you need in a timely manner.</p>
+
+                <h3>6.5 Third-Party Content</h3>
+                <p>While we strive to ensure the accessibility of all content on our website, some third-party content or applications embedded on our site may not be fully accessible. We work with third-party providers to improve accessibility and encourage them to adopt WCAG standards.</p>
+
+                <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to top</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+        <div class="container">
+            <h2>Questions About Our <span class="text-gold">Policies</span>?</h2>
+            <p>We're committed to transparency. If you have questions about any of these disclosures, please don't hesitate to reach out.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary"><span>Contact Us</span></a>
+                <a href="mailto:info@medaside.com" class="btn"><span>Email Us Directly</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="logo" style="margin-bottom:1.5rem;">
+                        <img src="assets/images/logo.png" alt="MED ASIDE"
+                            style="height:45px;width:45px;border-radius:4px;">
+                        <span class="logo-text">MED ASIDE<small>Medicare Set-Aside Experts</small></span>
+                    </a>
+                    <p>Setting the standard in Medicare Set-Aside administration, compliance, and settlement services.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="referral.html">Refer a Case</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#msa">MSA Administration</a></li>
+                        <li><a href="services.html#professional">Professional Admin</a></li>
+                        <li><a href="services.html#lien">Lien Resolution</a></li>
+                        <li><a href="services.html#trust">Trust Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Contact</h4>
+                    <p><span class="icon"><i class="fas fa-map-marker-alt"></i></span> PO Box 8294<br>Van
+                        Nuys, CA 91410</p>
+                    <p><span class="icon"><i class="fas fa-envelope"></i></span> info@medaside.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MED ASIDE. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="legal.html#privacy">Privacy Policy</a>
+                    <a href="legal.html#terms">Terms of Service</a>
+                    <a href="legal.html#disclaimers">Disclaimers</a>
+                </div>
+            </div>
+            <p style="font-size:0.65rem;color:rgba(255,255,255,0.3);margin-top:0.75rem;line-height:1.5;max-width:800px;margin-left:auto;margin-right:auto;">MED ASIDE is not a law firm and does not provide legal advice. Information on this site is for general purposes only. By using this site, you agree to our <a href="legal.html#terms" style="color:rgba(201,168,76,0.5);">Terms of Service</a> and <a href="legal.html#privacy" style="color:rgba(201,168,76,0.5);">Privacy Policy</a>. <a href="legal.html#consent" style="color:rgba(201,168,76,0.5);">Communication preferences & opt-out</a>.</p>
+            <div style="text-align:center;padding:0.75rem 0 0;border-top:1px solid rgba(255,255,255,0.05);margin-top:0.75rem;"><p style="font-size:0.6rem;color:rgba(255,255,255,0.25);letter-spacing:0.5px;">Website custom built by Brandon Bible, Adaptation Living LLC &mdash; <a href="mailto:info@adaptationliving.com" style="color:rgba(255,255,255,0.3);">info@adaptationliving.com</a></p></div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobileToggle').addEventListener('click', function () {
+            document.getElementById('mainNav').classList.toggle('open');
+            const icon = this.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

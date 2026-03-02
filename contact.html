@@ -1058,7 +1058,10 @@
                     <h2>Send a <span class="text-gold">Message</span></h2>
                     <p class="form-subtitle">Fill out the form below and a member of our team will get back to you promptly.</p>
 
-                    <form id="contactForm" action="#" method="POST" novalidate>
+                    <form id="contactForm" novalidate>
+                        <input type="hidden" name="access_key" value="e6a536ec-9d89-431e-9c7f-07c37722ff7e">
+                        <input type="hidden" name="subject" value="New Contact Inquiry — MED-ASIDE">
+                        <div style="position:absolute;left:-9999px;opacity:0;height:0;width:0;overflow:hidden;" aria-hidden="true"><input type="text" name="botcheck" tabindex="-1" autocomplete="off"></div>
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="firstName">First Name <span class="required">*</span></label>
@@ -1112,10 +1115,17 @@
                             <textarea id="message" name="message" placeholder="Tell us about your case or inquiry..." required></textarea>
                         </div>
 
-                        <button type="submit" class="btn-submit">
+                        <button type="submit" class="btn-submit" id="contactSubmitBtn">
                             <i class="fas fa-paper-plane"></i> Send Message
                         </button>
                     </form>
+                    <div id="contactSuccess" style="display:none; text-align:center; padding:3rem 2rem;">
+                        <div style="width:70px;height:70px;border-radius:50%;background:rgba(201,168,76,0.15);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;">
+                            <i class="fas fa-check" style="font-size:1.8rem;color:#c9a84c;"></i>
+                        </div>
+                        <h3 style="color:#e2e8f0;font-family:'Playfair Display',serif;margin-bottom:0.75rem;">Message Received</h3>
+                        <p style="color:#94a3b8;font-size:0.95rem;line-height:1.6;">Thank you for reaching out. A member of our team will review your inquiry and respond within one business day.</p>
+                    </div>
                 </div>
 
             </div>
@@ -1189,13 +1199,53 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 MED ASIDE. All rights reserved.</p>
                 <div class="footer-bottom-links">
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Service</a>
-                    <a href="sitemap.html">Sitemap</a>
+                    <a href="legal.html#privacy">Privacy Policy</a>
+                    <a href="legal.html#terms">Terms of Service</a>
+                    <a href="legal.html">Legal</a>
                 </div>
             </div>
+
+            <p style="font-size:0.65rem;color:rgba(255,255,255,0.3);margin-top:0.75rem;line-height:1.5;max-width:800px;margin-left:auto;margin-right:auto;text-align:center;">MED ASIDE is not a law firm and does not provide legal advice. Information on this site is for general purposes only. By using this site, you agree to our <a href="legal.html#terms" style="color:rgba(201,168,76,0.5);">Terms of Service</a> and <a href="legal.html#privacy" style="color:rgba(201,168,76,0.5);">Privacy Policy</a>. <a href="legal.html#consent" style="color:rgba(201,168,76,0.5);">Communication preferences &amp; opt-out</a>.</p>
+            <div style="text-align:center;padding:0.75rem 0 0;border-top:1px solid rgba(255,255,255,0.05);margin-top:0.75rem;"><p style="font-size:0.6rem;color:rgba(255,255,255,0.25);letter-spacing:0.5px;">Website custom built by Brandon Bible, Adaptation Living LLC &mdash; <a href="mailto:info@adaptationliving.com" style="color:rgba(255,255,255,0.3);">info@adaptationliving.com</a></p></div>
         </div>
     </footer>
+
+    <!-- ==================== CONTACT FORM (Web3Forms) ==================== -->
+    <script>
+    (function() {
+        var form = document.getElementById('contactForm');
+        if (!form) return;
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var hp = form.querySelector('[name="botcheck"]');
+            if (hp && hp.value) return;
+            var btn = document.getElementById('contactSubmitBtn');
+            var origHTML = btn.innerHTML;
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                if (data.success) {
+                    form.style.display = 'none';
+                    document.getElementById('contactSuccess').style.display = 'block';
+                } else {
+                    alert('Something went wrong. Please try again or call us directly.');
+                    btn.disabled = false;
+                    btn.innerHTML = origHTML;
+                }
+            })
+            .catch(function() {
+                alert('Something went wrong. Please try again or call us directly.');
+                btn.disabled = false;
+                btn.innerHTML = origHTML;
+            });
+        });
+    })();
+    </script>
 
     <!-- ==================== MOBILE NAV TOGGLE ==================== -->
     <script>
