@@ -156,7 +156,7 @@
 
         .file-upload:hover {
             border-color: var(--accent-gold);
-            background: rgba(212, 175, 55, 0.03);
+            background: rgba(205, 127, 50, 0.03);
         }
 
         .file-upload i {
@@ -383,8 +383,8 @@
                                     class="fas fa-paper-plane"></i> Submit Referral</span></button>
                     </form>
                     <div id="referralSuccess" style="display:none; text-align:center; padding:3rem 2rem;">
-                        <div style="width:70px;height:70px;border-radius:50%;background:rgba(201,168,76,0.15);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;">
-                            <i class="fas fa-check" style="font-size:1.8rem;color:#c9a84c;"></i>
+                        <div style="width:70px;height:70px;border-radius:50%;background:rgba(205,127,50,0.15);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;">
+                            <i class="fas fa-check" style="font-size:1.8rem;color:#cd7f32;"></i>
                         </div>
                         <h3 style="color:#e2e8f0;font-family:'Playfair Display',serif;margin-bottom:0.75rem;">Referral Submitted</h3>
                         <p style="color:#94a3b8;font-size:0.95rem;line-height:1.6;">Thank you for your referral. Our team will acknowledge receipt within 24 hours and begin reviewing your case immediately.</p>
@@ -476,7 +476,7 @@
                 </div>
             </div>
 
-            <p style="font-size:0.65rem;color:rgba(255,255,255,0.3);margin-top:0.75rem;line-height:1.5;max-width:800px;margin-left:auto;margin-right:auto;text-align:center;">MED ASIDE is not a law firm and does not provide legal advice. Information on this site is for general purposes only. By using this site, you agree to our <a href="legal.html#terms" style="color:rgba(201,168,76,0.5);">Terms of Service</a> and <a href="legal.html#privacy" style="color:rgba(201,168,76,0.5);">Privacy Policy</a>. <a href="legal.html#consent" style="color:rgba(201,168,76,0.5);">Communication preferences &amp; opt-out</a>.</p>
+            <p style="font-size:0.65rem;color:rgba(255,255,255,0.3);margin-top:0.75rem;line-height:1.5;max-width:800px;margin-left:auto;margin-right:auto;text-align:center;">MED ASIDE is not a law firm and does not provide legal advice. Information on this site is for general purposes only. By using this site, you agree to our <a href="legal.html#terms" style="color:rgba(205,127,50,0.5);">Terms of Service</a> and <a href="legal.html#privacy" style="color:rgba(205,127,50,0.5);">Privacy Policy</a>. <a href="legal.html#consent" style="color:rgba(205,127,50,0.5);">Communication preferences &amp; opt-out</a>.</p>
             <div style="text-align:center;padding:0.75rem 0 0;border-top:1px solid rgba(255,255,255,0.05);margin-top:0.75rem;"><p style="font-size:0.6rem;color:rgba(255,255,255,0.25);letter-spacing:0.5px;">Website custom built by Brandon Bible, Adaptation Living LLC &mdash; <a href="mailto:info@adaptationliving.com" style="color:rgba(255,255,255,0.3);">info@adaptationliving.com</a></p></div>
         </div>
     </footer>
@@ -499,8 +499,8 @@
         if (uploadZone) {
             uploadZone.addEventListener('dragover', function(e) {
                 e.preventDefault();
-                uploadZone.style.borderColor = '#c9a84c';
-                uploadZone.style.background = 'rgba(201,168,76,0.1)';
+                uploadZone.style.borderColor = '#cd7f32';
+                uploadZone.style.background = 'rgba(205,127,50,0.1)';
             });
             uploadZone.addEventListener('dragleave', function() {
                 uploadZone.style.borderColor = '';
@@ -537,7 +537,7 @@
         function uploadToCloudinary(file) {
             var fileDiv = document.createElement('div');
             fileDiv.style.cssText = 'display:flex;align-items:center;gap:0.5rem;padding:0.5rem 0.75rem;background:rgba(255,255,255,0.05);border-radius:6px;margin-bottom:0.4rem;font-size:0.85rem;color:#94a3b8;';
-            fileDiv.innerHTML = '<i class="fas fa-spinner fa-spin" style="color:#c9a84c;"></i> Uploading ' + file.name + '...';
+            fileDiv.innerHTML = '<i class="fas fa-spinner fa-spin" style="color:#cd7f32;"></i> Uploading ' + file.name + '...';
             uploadedFilesDiv.appendChild(fileDiv);
 
             var formData = new FormData();
@@ -554,7 +554,7 @@
                 if (data.secure_url) {
                     uploadedUrls.push(data.secure_url);
                     documentUrlField.value = uploadedUrls.join(' | ');
-                    fileDiv.innerHTML = '<i class="fas fa-file-check" style="color:#c9a84c;"></i> <span style="color:#e2e8f0;">' + file.name + '</span> <a href="' + data.secure_url + '" target="_blank" style="color:#c9a84c;font-size:0.75rem;margin-left:auto;">View</a>';
+                    fileDiv.innerHTML = '<i class="fas fa-file-check" style="color:#cd7f32;"></i> <span style="color:#e2e8f0;">' + file.name + '</span> <a href="' + data.secure_url + '" target="_blank" style="color:#cd7f32;font-size:0.75rem;margin-left:auto;">View</a>';
                 } else {
                     fileDiv.innerHTML = '<i class="fas fa-circle-xmark" style="color:#e74c3c;"></i> <span style="color:#e74c3c;">Failed: ' + file.name + '</span>';
                 }
