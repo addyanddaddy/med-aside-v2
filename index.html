@@ -4,23 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MED ASIDE | Medicare Set-Aside Administration & Compliance Experts</title>
+    <title>MED ASIDE | Medicare Set-Aside Administration for Legal & Insurance Professionals</title>
     <link rel="icon" type="image/png" href="assets/images/logo.png">
     <link rel="apple-touch-icon" href="assets/images/logo.png">
 
     <!-- SEO Meta Tags -->
     <meta name="description"
-        content="MED ASIDE provides expert Medicare Set-Aside administration, MSA compliance, lien resolution, settlement consulting, and trust services. CMS-compliant MSA fund management serving all 50 states from Van Nuys, CA.">
+        content="MED ASIDE delivers institutional-grade Medicare Set-Aside administration, lien resolution, and settlement consulting for attorneys, adjusters, and insurance professionals. 100% CMS compliance. All 50 states.">
     <meta name="keywords"
-        content="Medicare Set-Aside, MSA administration, MSA compliance, Medicare Set-Aside allocation, CMS compliance, lien resolution, settlement administration, workers compensation MSA, liability MSA, trust services, settlement consulting, Medicare secondary payer, MSA fund management">
+        content="Medicare Set-Aside, MSA administration, MSA compliance, lien resolution, settlement consulting, CMS compliance, workers compensation MSA, liability MSA, trust services, attorney MSA referral, insurance settlement administration">
     <meta name="robots" content="index, follow">
     <meta name="author" content="MED ASIDE">
     <link rel="canonical" href="https://www.medaside.com/">
 
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="MED ASIDE | Medicare Set-Aside Administration & Compliance Experts">
+    <meta property="og:title" content="MED ASIDE | MSA Administration for Legal & Insurance Professionals">
     <meta property="og:description"
-        content="Expert Medicare Set-Aside administration, MSA compliance, lien resolution, and trust services. CMS-compliant fund management serving all 50 states.">
+        content="Institutional-grade Medicare Set-Aside administration, lien resolution, and settlement consulting. 100% CMS compliance. All 50 states.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.medaside.com/">
     <meta property="og:image" content="https://www.medaside.com/assets/images/og-image.png">
@@ -28,9 +28,9 @@
 
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="MED ASIDE | Medicare Set-Aside Administration & Compliance Experts">
+    <meta name="twitter:title" content="MED ASIDE | MSA Administration for Legal & Insurance Professionals">
     <meta name="twitter:description"
-        content="Expert Medicare Set-Aside administration, MSA compliance, lien resolution, and trust services. CMS-compliant fund management serving all 50 states.">
+        content="Institutional-grade Medicare Set-Aside administration, lien resolution, and settlement consulting. 100% CMS compliance. All 50 states.">
     <meta name="twitter:image" content="https://www.medaside.com/assets/images/og-image.png">
 
     <!-- JSON-LD Structured Data: Organization -->
@@ -41,7 +41,7 @@
         "name": "MED ASIDE",
         "url": "https://www.medaside.com",
         "logo": "https://www.medaside.com/assets/images/logo.png",
-        "description": "Medicare Set-Aside administration and compliance experts providing MSA fund management, lien resolution, settlement consulting, and trust services nationwide.",
+        "description": "Institutional-grade Medicare Set-Aside administration, lien resolution, settlement consulting, and trust services for legal and insurance professionals nationwide.",
         "email": "info@medaside.com",
         "address": {
             "@type": "PostalAddress",
@@ -75,7 +75,7 @@
         "image": "https://www.medaside.com/assets/images/logo.png",
         "url": "https://www.medaside.com",
         "email": "info@medaside.com",
-        "description": "Medicare Set-Aside administration and compliance experts. Professional MSA fund management, lien resolution, settlement consulting, and trust services.",
+        "description": "Institutional-grade Medicare Set-Aside administration for legal and insurance professionals. MSA fund management, lien resolution, settlement consulting, and trust services.",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "PO Box 8294",
@@ -123,6 +123,125 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Professional Site Overrides -->
+    <style>
+        /* Bigger, bolder hero for professional impact */
+        .hero { min-height: 85vh; display: flex; align-items: center; }
+        .hero h1 { font-size: 3.5rem; letter-spacing: -0.02em; line-height: 1.1; }
+        .hero p { font-size: 1.15rem; max-width: 560px; }
+        .hero .section-label {
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--gold);
+            border-left: 3px solid var(--gold);
+            padding-left: 12px;
+        }
+
+        /* Stat numbers pop harder */
+        .hero-stat h3 { font-size: 2.2rem; font-weight: 700; }
+
+        /* Single sidebar card - bigger, more commanding */
+        .hero-sidebar .hero-card {
+            padding: 2.5rem 2rem;
+            border-left: 3px solid var(--gold);
+        }
+        .hero-sidebar .hero-card h4 { font-size: 1.2rem; }
+
+        /* Services grid - 4 cards, 2x2 */
+        .services-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 1.5rem; }
+        .service-card { padding: 2.5rem 2rem; }
+        .service-card h3 { font-size: 1.3rem; }
+
+        /* Trust band - bigger numbers */
+        .trust-band h3 { font-size: 2.8rem; }
+        .trust-band p { font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; }
+
+        /* Professional testimonials - single featured quote */
+        .featured-testimonial {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 3rem;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            position: relative;
+        }
+        .featured-testimonial::before {
+            content: '\201C';
+            font-family: var(--font-display);
+            font-size: 6rem;
+            color: var(--gold);
+            opacity: 0.2;
+            position: absolute;
+            top: -10px;
+            left: 30px;
+            line-height: 1;
+        }
+        .featured-testimonial blockquote {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-style: italic;
+            color: var(--text-100);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        .featured-testimonial .author-name {
+            font-weight: 700;
+            color: var(--gold);
+            font-size: 1rem;
+        }
+        .featured-testimonial .author-title {
+            color: var(--text-300);
+            font-size: 0.9rem;
+        }
+
+        /* CTA band - tighter, punchier */
+        .cta-band h2 { font-size: 2.4rem; }
+
+        /* Why section - stronger headers */
+        .why-content h2 { font-size: 2.2rem; }
+        .why-item h4 { font-size: 1.1rem; font-weight: 700; }
+
+        /* Credential badges row */
+        .credentials {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 0;
+            flex-wrap: wrap;
+        }
+        .credential {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            text-align: center;
+        }
+        .credential i {
+            font-size: 2rem;
+            color: var(--gold);
+            opacity: 0.7;
+        }
+        .credential span {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-300);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .services-grid { grid-template-columns: 1fr !important; }
+            .trust-band h3 { font-size: 2rem; }
+            .featured-testimonial blockquote { font-size: 1.1rem; }
+            .credentials { gap: 1.5rem; }
+        }
+    </style>
 </head>
 
 <body>
@@ -132,7 +251,7 @@
         <div class="container">
             <div class="top-bar-left">
                 <a href="mailto:info@medaside.com"><i class="fas fa-envelope"></i> info@medaside.com</a>
-                <span><i class="fas fa-map-marker-alt"></i> Van Nuys, CA</span>
+                <span><i class="fas fa-map-marker-alt"></i> Van Nuys, CA | Nationwide</span>
             </div>
             <div class="top-bar-right">
                 <a href="portal.html" class="portal-btn"><i class="fas fa-lock"></i> Client Portal</a>
@@ -162,20 +281,9 @@
                             <a href="services.html">Services</a>
                             <div class="dropdown">
                                 <a href="services.html#msa">MSA Administration</a>
-                                <a href="services.html#professional">Professional Administration</a>
                                 <a href="services.html#lien">Lien Resolution</a>
                                 <a href="services.html#consulting">Settlement Consulting</a>
                                 <a href="services.html#trust">Trust Services</a>
-                                <a href="services.html#liability">Liability Settlements</a>
-                            </div>
-                        </li>
-                        <li class="has-dropdown">
-                            <a href="#">Resources</a>
-                            <div class="dropdown">
-                                <a href="#">Industry News</a>
-                                <a href="#">Settlement Guides</a>
-                                <a href="#">FAQ</a>
-                                <a href="#">Video Library</a>
                             </div>
                         </li>
                         <li><a href="contact.html">Contact</a></li>
@@ -193,15 +301,12 @@
         <div class="container">
             <div class="hero-inner">
                 <div class="hero-content">
-                    <span class="section-label">Settlement Administration Experts</span>
-                    <h1>Securing Your Future with <span class="text-gold">Precision & Compliance</span></h1>
-                    <p>We provide personalized MSA administration, settlement planning, and Medicare compliance with a
-                        level of dedicated attention and automated efficiency that large institutions simply cannot
-                        match.</p>
+                    <span class="section-label">For Attorneys & Insurance Professionals</span>
+                    <h1>MSA Administration <span class="text-gold">Done Right.</span></h1>
+                    <p>Refer your cases to the team that delivers 100% CMS compliance, 40% faster resolutions, and zero audit failures. Your clients are protected. Your practice is covered.</p>
                     <div class="hero-ctas">
-                        <a href="contact.html" class="btn btn-primary"><span>Schedule Consultation</span></a>
-                        <a href="services.html" class="btn btn-outline-light"><span><i class="fas fa-play-circle"></i>
-                                Explore Our Services</span></a>
+                        <a href="referral.html" class="btn btn-primary"><span>Refer a Case Now</span></a>
+                        <a href="services.html" class="btn btn-outline-light"><span>Our Services</span></a>
                     </div>
                     <div class="hero-stats">
                         <div class="hero-stat">
@@ -209,90 +314,91 @@
                             <p>Funds Administered</p>
                         </div>
                         <div class="hero-stat">
-                            <h3>50</h3>
-                            <p>States Covered</p>
+                            <h3>5,000+</h3>
+                            <p>Cases Managed</p>
                         </div>
                         <div class="hero-stat">
                             <h3>100%</h3>
-                            <p>Compliance Rate</p>
+                            <p>CMS Compliance</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="hero-sidebar">
                     <div class="hero-card">
-                        <h4><i class="fas fa-file-signature"></i> Refer a Case</h4>
-                        <p>Attorneys: Submit a new case referral for MSA administration, lien resolution, or settlement
-                            consulting.</p>
+                        <h4><i class="fas fa-file-signature"></i> Submit a Referral</h4>
+                        <p>Send us a new case for MSA administration, lien resolution, or settlement consulting. We acknowledge all referrals within 24 hours and begin work immediately.</p>
                         <a href="referral.html">Begin Referral <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="hero-card">
-                        <h4><i class="fas fa-user-shield"></i> New Members</h4>
-                        <p>Just received your settlement? Access your account, manage your funds, and review your
-                            benefits.</p>
-                        <a href="portal.html">Member Portal <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    <div class="hero-card">
-                        <h4><i class="fas fa-envelope"></i> Need Help?</h4>
-                        <p>Email us at <strong>info@medaside.com</strong> or reach out online. Our team responds within 24
-                            hours.</p>
-                        <a href="contact.html">Contact Us <i class="fas fa-arrow-right"></i></a>
+                        <h4><i class="fas fa-briefcase"></i> Attorney Portal</h4>
+                        <p>Access case status, compliance reports, and account documentation for your referred clients.</p>
+                        <a href="portal.html">Attorney Login <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Credential Badges -->
+    <section style="background: var(--navy-900); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
+        <div class="container">
+            <div class="credentials">
+                <div class="credential">
+                    <i class="fas fa-shield-halved"></i>
+                    <span>CMS Compliant</span>
+                </div>
+                <div class="credential">
+                    <i class="fas fa-lock"></i>
+                    <span>HIPAA Secure</span>
+                </div>
+                <div class="credential">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>All 50 States</span>
+                </div>
+                <div class="credential">
+                    <i class="fas fa-clock"></i>
+                    <span>24hr Response</span>
+                </div>
+                <div class="credential">
+                    <i class="fas fa-certificate"></i>
+                    <span>Zero Audit Failures</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services — Focused for Professionals -->
     <section class="services-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-label" style="padding-left:0; text-align:center;">What We Do</span>
-                <h2>Comprehensive <span class="text-gold">Settlement Solutions</span></h2>
-                <p>From MSA administration to trust services, we handle every aspect of the post-settlement process with
-                    precision and care.</p>
+                <span class="section-label" style="padding-left:0; text-align:center;">Core Capabilities</span>
+                <h2>What We <span class="text-gold">Handle</span></h2>
+                <p>We take full ownership of the post-settlement process so you can focus on your practice.</p>
             </div>
             <div class="services-grid">
                 <a href="services.html#msa" class="service-card">
                     <div class="service-icon"><i class="fas fa-hospital-user"></i></div>
                     <h3>MSA Administration</h3>
-                    <p>Expert management of Medicare Set-Aside accounts, ensuring compliance with CMS guidelines and
-                        protecting your Medicare benefits.</p>
-                    <span class="service-link"><span>Learn More</span> <span class="arrow">&rarr;</span></span>
-                </a>
-                <a href="services.html#professional" class="service-card">
-                    <div class="service-icon"><i class="fas fa-briefcase"></i></div>
-                    <h3>Professional Administration</h3>
-                    <p>Full-service fund management including bill payment, budgeting, and investment oversight to
-                        maximize your settlement value.</p>
+                    <p>Full lifecycle MSA fund management — CMS reporting, bill review, pharmacy benefits, and dedicated caseworker for every account. Workers' comp and liability.</p>
                     <span class="service-link"><span>Learn More</span> <span class="arrow">&rarr;</span></span>
                 </a>
                 <a href="services.html#lien" class="service-card">
                     <div class="service-icon"><i class="fas fa-handshake"></i></div>
                     <h3>Lien Resolution</h3>
-                    <p>Aggressive negotiation and resolution of liens from Medicare, Medicaid, and private insurers to
-                        maximize your net recovery.</p>
+                    <p>Aggressive identification, negotiation, and resolution of Medicare, Medicaid, ERISA, and private carrier liens. Documented clearance for clean closings.</p>
                     <span class="service-link"><span>Learn More</span> <span class="arrow">&rarr;</span></span>
                 </a>
                 <a href="services.html#consulting" class="service-card">
                     <div class="service-icon"><i class="fas fa-chart-line"></i></div>
                     <h3>Settlement Consulting</h3>
-                    <p>Strategic planning to structure settlements that meet current needs and future goals while
-                        minimizing tax liabilities.</p>
+                    <p>Pre-settlement MSA allocation analysis, future medical cost projections, CMS submission strategy, and benefit preservation planning.</p>
                     <span class="service-link"><span>Learn More</span> <span class="arrow">&rarr;</span></span>
                 </a>
                 <a href="services.html#trust" class="service-card">
                     <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Trust Services</h3>
-                    <p>Comprehensive trust administration including Special Needs Trusts and Preservation Trusts to
-                        safeguard your assets.</p>
-                    <span class="service-link"><span>Learn More</span> <span class="arrow">&rarr;</span></span>
-                </a>
-                <a href="services.html#liability" class="service-card">
-                    <div class="service-icon"><i class="fas fa-gavel"></i></div>
-                    <h3>Liability Settlements</h3>
-                    <p>Specialized solutions ensuring medical future care needs are accurately projected, funded, and
-                        compliant.</p>
+                    <h3>Trust & Fund Services</h3>
+                    <p>Special Needs Trusts, Qualified Settlement Funds, and pooled trusts. Court accounting, fiduciary compliance, and estate coordination.</p>
                     <span class="service-link"><span>Learn More</span> <span class="arrow">&rarr;</span></span>
                 </a>
             </div>
@@ -305,146 +411,98 @@
             <div class="trust-grid">
                 <div class="trust-item">
                     <h3>98%</h3>
-                    <p>Client Retention Rate</p>
+                    <p>Attorney Retention</p>
                 </div>
                 <div class="trust-item">
                     <h3>24hr</h3>
-                    <p>Response Guarantee</p>
+                    <p>Referral Acknowledgment</p>
                 </div>
                 <div class="trust-item">
-                    <h3>5,000+</h3>
-                    <p>Cases Administered</p>
+                    <h3>40%</h3>
+                    <p>Faster Than Average</p>
                 </div>
                 <div class="trust-item">
                     <h3>$500M+</h3>
-                    <p>Funds Under Management</p>
+                    <p>Under Administration</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us -->
+    <!-- Why Professionals Choose Us -->
     <section class="why-section">
         <div class="container">
             <div class="why-grid">
                 <div class="why-content">
                     <span class="section-label">The MED ASIDE Advantage</span>
-                    <h2>Why Clients Choose <span class="text-gold">Us Over the Competition</span></h2>
-                    <p class="text-muted">Unlike large, bureaucratic settlement administrators, we combine cutting-edge
-                        technology with deeply personal service. Every client gets a dedicated team — not a call center.
-                    </p>
+                    <h2>Why Attorneys & Adjusters <span class="text-gold">Choose Us</span></h2>
+                    <p class="text-muted">Your referral reflects on your practice. We deliver the precision and responsiveness that protects your reputation and your clients' futures.</p>
                     <div class="why-list">
                         <div class="why-item">
                             <div class="why-icon"><i class="fas fa-user-tie"></i></div>
                             <div>
-                                <h4>Dedicated Case Manager</h4>
-                                <p>You'll work with the same expert from day one — no transfers, no runaround.</p>
+                                <h4>Single Point of Contact</h4>
+                                <p>Every case gets a dedicated specialist. One phone call, one email — direct access, no queue.</p>
                             </div>
                         </div>
                         <div class="why-item">
                             <div class="why-icon"><i class="fas fa-bolt"></i></div>
                             <div>
-                                <h4>Faster Resolution Times</h4>
-                                <p>Our streamlined process resolves liens and sets up administration 40% faster than the
-                                    industry average.</p>
+                                <h4>40% Faster Resolution</h4>
+                                <p>Streamlined intake, automated compliance workflows, and aggressive lien negotiation. We close faster.</p>
                             </div>
                         </div>
                         <div class="why-item">
                             <div class="why-icon"><i class="fas fa-lock"></i></div>
                             <div>
-                                <h4>Full CMS Compliance</h4>
-                                <p>100% compliance rate with Centers for Medicare & Medicaid Services guidelines — zero
-                                    audit failures.</p>
+                                <h4>Zero Audit Failures</h4>
+                                <p>100% CMS compliance rate. Every filing, every attestation, every report — airtight.</p>
                             </div>
                         </div>
                         <div class="why-item">
                             <div class="why-icon"><i class="fas fa-chart-pie"></i></div>
                             <div>
-                                <h4>Transparent Reporting</h4>
-                                <p>Real-time access to your account through our client portal, with detailed quarterly
-                                    reports.</p>
+                                <h4>Attorney Portal Access</h4>
+                                <p>Real-time case status, compliance documents, and financial reports — accessible 24/7 from your dashboard.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div style="display:flex;align-items:center;justify-content:center;">
-                    <img src="assets/images/hero.png" alt="Professional office environment"
+                    <img src="assets/images/hero.png" alt="Professional settlement administration"
                         style="max-height:500px;object-fit:cover;border:1px solid var(--glass-border);">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
+    <!-- Featured Professional Testimonial -->
     <section class="testimonials-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-label" style="padding-left:0; text-align:center;">Client Testimonials</span>
-                <h2>What Our Clients <span class="text-gold">Are Saying</span></h2>
-                <p>Real stories from real people whose settlements were protected by MED ASIDE.</p>
+                <span class="section-label" style="padding-left:0; text-align:center;">From Our Partners</span>
+                <h2>Trusted by <span class="text-gold">Leading Attorneys</span></h2>
             </div>
-            <div class="testimonials-grid">
+            <div class="featured-testimonial">
+                <blockquote>As a plaintiff's attorney, I've referred dozens of cases to MED ASIDE. Their turnaround time and attention to detail are unmatched. My clients feel taken care of, and that reflects well on my practice. I won't send my cases anywhere else.</blockquote>
+                <div class="author-name">James T., Esq.</div>
+                <div class="author-title">Personal Injury Attorney, Los Angeles</div>
+            </div>
+            <div class="testimonials-grid" style="margin-top: 2rem;">
                 <div class="testimonial-card">
-                    <p>MED ASIDE handled every aspect of my MSA administration with incredible professionalism. I never
-                        had to worry about compliance or missed deadlines. They were always a phone call away.</p>
-                    <div class="testimonial-author">Maria G.</div>
-                    <div class="testimonial-role">Workers' Compensation Claimant</div>
-                </div>
-                <div class="testimonial-card">
-                    <p>As a plaintiff's attorney, I've referred dozens of cases to MED ASIDE. Their turnaround time and
-                        attention to detail are unmatched. My clients feel taken care of, and that reflects well on my
-                        practice.</p>
-                    <div class="testimonial-author">James T., Esq.</div>
-                    <div class="testimonial-role">Personal Injury Attorney, Los Angeles</div>
+                    <p>We switched from a national administrator to MED ASIDE for our workers' comp MSA portfolio. The difference in responsiveness and accuracy was immediate. Our adjusters have direct lines to their team.</p>
+                    <div class="testimonial-author">Katherine M.</div>
+                    <div class="testimonial-role">Claims Director, Regional Insurance Carrier</div>
                 </div>
                 <div class="testimonial-card">
-                    <p>After my settlement, I was overwhelmed. MED ASIDE made the process simple and stress-free. Their
-                        quarterly reports keep me informed, and their team is always available to answer questions.</p>
-                    <div class="testimonial-author">Robert K.</div>
-                    <div class="testimonial-role">Liability Settlement Recipient</div>
+                    <p>I've mediated hundreds of cases that required MSA compliance. MED ASIDE's pre-settlement consulting has saved my clients significant dollars while maintaining full CMS compliance. They know the nuances.</p>
+                    <div class="testimonial-author">David R., Esq.</div>
+                    <div class="testimonial-role">Mediator & Settlement Consultant</div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resources / News -->
-    <section class="resources-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label" style="padding-left:0; text-align:center;">Resources & Updates</span>
-                <h2>Stay <span class="text-gold">Informed</span></h2>
-                <p>Industry news, settlement guides, and compliance updates to keep you ahead of the curve.</p>
-            </div>
-            <div class="resources-grid">
-                <div class="resource-card">
-                    <div class="resource-thumb"><i class="fas fa-newspaper"></i></div>
-                    <div class="resource-body">
-                        <span class="resource-tag">Industry News</span>
-                        <h4>CMS Announces 2026 Recovery Thresholds</h4>
-                        <p>The Centers for Medicare & Medicaid Services has released updated thresholds for MSA review.
-                            Here's what you need to know.</p>
-                        <span class="resource-link">Read More &rarr;</span>
-                    </div>
-                </div>
-                <div class="resource-card">
-                    <div class="resource-thumb"><i class="fas fa-book-open"></i></div>
-                    <div class="resource-body">
-                        <span class="resource-tag">Settlement Guide</span>
-                        <h4>Understanding Your Medicare Set-Aside</h4>
-                        <p>A comprehensive guide to what an MSA is, how it works, and why professional administration
-                            protects your future healthcare.</p>
-                        <span class="resource-link">Download Guide &rarr;</span>
-                    </div>
-                </div>
-                <div class="resource-card">
-                    <div class="resource-thumb"><i class="fas fa-video"></i></div>
-                    <div class="resource-body">
-                        <span class="resource-tag">Video Series</span>
-                        <h4>MSA Self-Administration Basics</h4>
-                        <p>Watch our video series explaining the fundamentals of self-administering your Medicare
-                            Set-Aside account.</p>
-                        <span class="resource-link">Watch Now &rarr;</span>
-                    </div>
+                <div class="testimonial-card">
+                    <p>The lien resolution team at MED ASIDE is aggressive, thorough, and fast. They've consistently reduced our clients' lien exposure and delivered clean closings every time.</p>
+                    <div class="testimonial-author">Sarah L., Esq.</div>
+                    <div class="testimonial-role">Defense Attorney, National Firm</div>
                 </div>
             </div>
         </div>
@@ -453,13 +511,12 @@
     <!-- CTA Band -->
     <section class="cta-band">
         <div class="container">
-            <h2>Ready to Secure <span class="text-gold">Your Settlement?</span></h2>
-            <p>Whether you're an injured party, attorney, or insurance professional — we're here to help. Get started
-                today.</p>
+            <h2>Ready to <span class="text-gold">Refer a Case?</span></h2>
+            <p>Submit a referral and our team will acknowledge receipt within 24 hours. We begin working immediately.</p>
             <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-primary"><span>Schedule a Consultation</span></a>
-                <a href="referral.html" class="btn"><span>Refer a Case</span></a>
-                <a href="mailto:info@medaside.com" class="btn btn-outline-light"><span><i class="fas fa-envelope"></i> info@medaside.com</span></a>
+                <a href="referral.html" class="btn btn-primary"><span>Submit a Referral</span></a>
+                <a href="contact.html" class="btn"><span>Schedule a Consultation</span></a>
+                <a href="mailto:referrals@medaside.com" class="btn btn-outline-light"><span><i class="fas fa-envelope"></i> referrals@medaside.com</span></a>
             </div>
         </div>
     </section>
@@ -474,8 +531,7 @@
                             style="height:45px;width:45px;border-radius:4px;">
                         <span class="logo-text">MED ASIDE<small>Medicare Set-Aside Experts</small></span>
                     </a>
-                    <p>Setting the standard in Medicare Set-Aside administration, MSA compliance, and trust services.
-                        Serving clients nationwide from Van Nuys, California.</p>
+                    <p>Institutional-grade Medicare Set-Aside administration, lien resolution, and settlement consulting. Trusted by attorneys and insurance professionals nationwide.</p>
                     <div class="social-links">
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
@@ -496,10 +552,9 @@
                     <h4>Services</h4>
                     <ul>
                         <li><a href="services.html#msa">MSA Administration</a></li>
-                        <li><a href="services.html#professional">Professional Admin</a></li>
                         <li><a href="services.html#lien">Lien Resolution</a></li>
                         <li><a href="services.html#consulting">Settlement Consulting</a></li>
-                        <li><a href="services.html#trust">Trust Services</a></li>
+                        <li><a href="services.html#trust">Trust & Fund Services</a></li>
                     </ul>
                 </div>
                 <div class="footer-col footer-contact">
@@ -507,6 +562,7 @@
                     <p><span class="icon"><i class="fas fa-map-marker-alt"></i></span> PO Box 8294<br>Van
                         Nuys, CA 91410</p>
                     <p><span class="icon"><i class="fas fa-envelope"></i></span> info@medaside.com</p>
+                    <p><span class="icon"><i class="fas fa-envelope"></i></span> referrals@medaside.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
